@@ -1,11 +1,9 @@
 import { Module } from '@nestjs/common';
+import { MongooseModule } from '@nestjs/mongoose';
 import { JogadoresModule } from './jogadores/jogadores.module';
 import { CategoriasModule } from './categorias/categorias.module';
-import { Key } from './database/key';
-import { MongooseModule } from '@nestjs/mongoose';
 import { DesafiosModule } from './desafios/desafios.module';
-
-
+import { Key } from './database/key';
 
 @Module({
   imports: [
